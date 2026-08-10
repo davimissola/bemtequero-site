@@ -126,7 +126,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 77vh;
+    height: 78vh;
     text-align: center;
 }
 
@@ -166,8 +166,6 @@ a {
 
 .faixa-info {
     background-color: var(--branco);
-    border-bottom: 1px solid #F5F4F6;
-    border-top: 1px solid #F5F4F6;
     overflow: hidden;
     padding: 2vh 0;
 }
@@ -234,6 +232,103 @@ a {
     font-size: 1.2rem;
     line-height: 35px;
     color: var(--preto-800);
+}
+
+
+
+/* -- */
+
+.section-destaques {
+    padding: 10vh 6vw;
+    background-color: var(--preto-50);
+    text-align: center;
+}
+
+.destaques-header {
+    margin-bottom: 6vh;
+}
+ 
+.h2-destaques {
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--preto-900);
+    margin-bottom: 1vh;
+}
+ 
+.p-destaques {
+    font-size: 15px;
+    color: var(--preto-500);
+}
+ 
+.destaques-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 85%;
+    gap: 4vw;
+    text-align: left;
+    margin-bottom: 6vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-produto {
+    color: inherit;
+    display: block;
+}
+ 
+.card-produto-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    aspect-ratio: 4 / 5;
+    background-color: var(--preto-50);
+    overflow: hidden;
+    margin-bottom: 1.5vh;
+}
+ 
+.card-produto-imagem img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+ 
+.card-produto-tag {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--preto-900);
+    color: var(--branco);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 1vh 1vw;
+}
+ 
+.card-produto-titulo {
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--preto-900);
+    margin-bottom: 0.3vh;
+}
+ 
+.card-produto-texto {
+    font-size: 13px;
+    color: var(--preto-300);
+    margin-bottom: 0.8vh;
+}
+ 
+.card-produto-preco {
+    font-size: 14px;
+    color: var(--preto-700);
+}
+ 
+.card-produto-preco-de {
+    color: var(--preto-300);
+    text-decoration: line-through;
+    margin-right: 0.6vw;
 }
 
 
