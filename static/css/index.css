@@ -10,6 +10,7 @@
     --preto-800: #1A1A1D; /* fundo escuro, headers, footer */
     --preto-700: #2E2E33; /* texto principal em fundo claro */
     --preto-500: #4A4A50; /* texto secundário */
+    --preto-400: #6c6c70; /* texto desabilitado, ícones sutis */
     --preto-300: #8A8A90; /* texto desabilitado, ícones sutis */
     --preto-100: #D8D7DA; /* bordas sobre fundo escuro */
     --preto-50:  #F5F4F6; /* fundo neutro claro, quase branco */
@@ -162,7 +163,7 @@ a {
     background-color: #FFFFFF35;
 }
 
-
+/* faixa */
 
 .faixa-info {
     background-color: var(--branco);
@@ -205,7 +206,7 @@ a {
     }
 }
 
-
+/* section sobre nos */
 
 .div-sobre {
     display: grid;
@@ -234,12 +235,11 @@ a {
     color: var(--preto-800);
 }
 
-
-
-/* -- */
+/* section produtos destaque */
 
 .section-destaques {
-    padding: 10vh 6vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     background-color: var(--preto-50);
     text-align: center;
 }
@@ -263,10 +263,9 @@ a {
 .destaques-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 85%;
+    width: 75%;
     gap: 4vw;
     text-align: left;
-    margin-bottom: 6vh;
     margin-left: auto;
     margin-right: auto;
 }
@@ -331,17 +330,228 @@ a {
     margin-right: 0.6vw;
 }
 
+.link-todos-produtos {
+    padding-top: 3vh;
+}
+
+.link-todos-produtos a {
+    position: relative;
+    color: var(--preto-300);
+    padding-bottom: 0.3vh;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.link-todos-produtos a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.1px;
+    background-color: var(--lilas-800);
+    transform: scaleX(0);
+    transform-origin: left; 
+    transition: transform 0.4s ease;
+}
+
+.link-todos-produtos a:hover {
+    color: var(--lilas-800);
+}
+
+.link-todos-produtos a:hover::after {
+    transform: scaleX(1);
+}
+
+.lucide-chevron-right {
+    width: 1.2vw;
+}
+
+
+/* section banner */
+.section-banner {
+    background-color: var(--preto-50);
+    padding: 8vh 0;
+    display: flex;
+    justify-content: center;
+}
+ 
+.banner-box {
+    width: 75%;
+    height: 40vh;
+    background-color: var(--lilas-800);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8vw;
+    overflow: visible;
+}
+ 
+.banner-texto {
+    max-width: 50%;
+}
+ 
+.banner-texto p {
+    color: var(--off-white);
+    font-size: 2rem;
+    line-height: 1.4;
+}
+ 
+.banner-imagem {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-shrink: 0;
+}
+ 
+.banner-imagem img {
+    position: absolute;
+    right: -4vw;
+    bottom: -19vh;
+    width: 65vh;
+    max-width: none;
+}
 
 
 
 
 
-
+@media (max-width: 1100px) {
+ 
+    .banner-box {
+        width: 85%;
+        height: 34vh;
+        padding: 0 6vw;
+    }
+ 
+    .banner-texto p {
+        font-size: 1.6rem;
+    }
+ 
+    .banner-imagem img {
+        width: 48vh;
+        right: -2vw;
+        bottom: -13vh;
+    }
+}
 
 
 @media (max-width: 900px) {
+    /* section hero */
+    .h1 {
+        padding-top: 12vh;
+        font-size: 3rem;
+        max-width: 90%;
+    }
+
+    .p-hero {
+        max-width: 90%;
+    }
+
+
+    /* faixa */
     .faixa-item {
         font-size: 13px;
         padding: 0 4vw;
+    }
+
+
+    /* section sobre nos */
+    .div-sobre {
+        grid-template-columns: 1fr; 
+        gap: 4vh;
+        padding: 0 6vw 6vh;
+    }
+
+    .sobre-texto {
+        order: 2; 
+    }
+
+    .div-sobre > div:last-child {
+        order: 1; 
+    }
+
+    .sobre-texto h2 {
+        margin: 0;
+        font-size: 1.8rem;
+    }
+
+    .img-sobre {
+        display: block;
+        width: calc(100% + 12vw);
+        max-width: none;
+        margin: 0 -6vw;
+    }
+
+    .sobre-texto p {
+        max-width: 100%; 
+        text-align: left; 
+        font-size: 1rem;
+        line-height: 1.6; 
+    }
+
+
+    /* section produtos destaques */
+    .destaques-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        width: 100%;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        gap: 5vw;
+    }
+
+    .card-produto {
+        flex: 0 0 75%; 
+        scroll-snap-align: start;
+    }
+
+    .destaques-grid::-webkit-scrollbar {
+        display: none;
+    }
+
+    .destaques-grid {
+        scrollbar-width: none; 
+    }
+}
+
+
+@media (max-width: 700px) {
+ 
+    .banner-box {
+        width: 80%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 28px;
+        padding: 5vh 6vw 0;
+        overflow: hidden; /* aqui o vazamento não faz sentido, então cortamos */
+    }
+ 
+    .banner-texto {
+        max-width: 100%;
+        text-align: center;
+    }
+ 
+    .banner-texto p {
+        font-size: 1.3rem;
+    }
+ 
+    .banner-imagem {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        margin-top: 3vh;
+    }
+ 
+    .banner-imagem img {
+        position: static;
+        width: 100%;
+        max-width: 260px;
     }
 }
