@@ -3,15 +3,14 @@ const produtos_grid = document.querySelector('.todosprodutos-grid')
 
 
 const todos_produtos = [
-    {id: 1, titulo:'Produto 01', descricao: '--------------------', preco: 'R$ 000,00'},
-    {id: 2, titulo:'Produto 02', descricao: '--------------------', preco: 'R$ 000,00'},
-    {id: 3, titulo:'Produto 03', descricao: '--------------------', preco: 'R$ 000,00'},
-    {id: 4, titulo:'Produto 04', descricao: '--------------------', preco: 'R$ 000,00'},
-    {id: 5, titulo:'Produto 05', descricao: '--------------------', preco: 'R$ 000,00'},
-    {id: 6, titulo:'Produto 06', descricao: '--------------------', preco: 'R$ 000,00'},
-    {id: 7, titulo:'Produto 07', descricao: '--------------------', preco: 'R$ 000,00'},
-    {id: 8, titulo:'Produto 08', descricao: '--------------------', preco: 'R$ 000,00'},
-    {id: 9, titulo:'Produto 09', descricao: '--------------------', preco: 'R$ 000,00'},
+    {id: 1, titulo:'Kit Cuidado & Carinho', descricao: 'Esse é um teste de texto de produtos card', preco: 'R$ 70,90'},
+    {id: 2, titulo:'Kit Cuidado & Carinho', descricao: 'Esse é um teste de texto de produtos card', preco: 'R$ 100,88'},
+    {id: 3, titulo:'Kit Cuidado & Carinho', descricao: 'Esse é um teste de texto de produtos card', preco: 'R$ 40,99'},
+    {id: 4, titulo:'Kit Cuidado & Carinho', descricao: 'Esse é um teste de texto de produtos card', preco: 'R$ 123,90'},
+    {id: 5, titulo:'Kit Cuidado & Carinho', descricao: 'Esse é um teste de texto de produtos card', preco: 'R$ 99,99'},
+    {id: 6, titulo:'Kit Cuidado & Carinho', descricao: 'Esse é um teste de texto de produtos card', preco: 'R$ 99,99'},
+    {id: 7, titulo:'Kit Cuidado & Carinho', descricao: 'Esse é um teste de texto de produtos card', preco: 'R$ 99,99'},
+    {id: 8, titulo:'Kit Cuidado & Carinho', descricao: 'Esse é um teste de texto de produtos card', preco: 'R$ 99,99'},
 ]
 let linha_produtos = ''
 let quantidade = 0
