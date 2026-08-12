@@ -535,6 +535,7 @@ a {
         width: 100%;
         padding-left: 6vw;
         padding-right: 6vw;
+        margin-bottom: 10vh;
         gap: 5vw;
     }
 
