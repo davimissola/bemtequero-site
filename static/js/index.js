@@ -24,7 +24,7 @@ todos_produtos.forEach(produto => {
     `
     <a href="produto.html?id=${produto.id}" class="card-produto">
         <div class="card-produto-imagem">
-            <img src="static/img/produtos/produto${produto.id}.png" alt="${produto.descricao}">
+            <img src="static/img/produtos/produto${produto.id}.webp" alt="${produto.descricao}">
         </div>
         <p class="card-produto-titulo">${produto.titulo}</p>
         <p class="card-produto-texto">${produto.descricao}</p>

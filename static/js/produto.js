@@ -26,7 +26,7 @@ if (id_produto) {
     const produto_encontrado = todos_produtos.find(produto => produto.id == Number(id_produto))
 
     if (produto_encontrado) {
-        imagem.src = `static/img/produtos/produto${produto_encontrado.id}.png`
+        imagem.src = `static/img/produtos/produto${produto_encontrado.id}.webp`
         titulo.innerHTML = produto_encontrado.titulo
         descricao.innerHTML = produto_encontrado.descricao
         preco.innerHTML = produto_encontrado.preco
