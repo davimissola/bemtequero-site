@@ -20,7 +20,7 @@ todos_produtos.forEach(produto => {
     quantidade++
     let conteudo = 
     `
-    <a href="#" class="card-produto">
+    <a href="produto.html?id=${produto.id}" class="card-produto">
         <div class="card-produto-imagem">
             <img src="static/img/produtos/produto${produto.id}.png" alt="${produto.descricao}">
         </div>
