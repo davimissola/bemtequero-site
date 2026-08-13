@@ -6,7 +6,7 @@
     <title>Bem te Quero</title>
 
     <!-- Utilitários -->
-    <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/style.css">
     <link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900,1&f[]=boska@300,400,500,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -17,31 +17,30 @@
     </div>
     <div class="header-linha2">
         <div class="header-navegacao">
-            <a href="#" class="a-header-navegacao">Home</a>
-            <a href="#" class="a-header-navegacao">Sobre Nós</a>
+            <a href="#hero" class="a-header-navegacao">Home</a>
+            <a href="#sobre-nos" class="a-header-navegacao">Sobre Nós</a>
         </div>
         <div class="header-centro">
             <img src="static/img/logobranca.png" alt="Logo Bem te Quero" class="header-logo">
         </div>
         <div class="header-navegacao">
-            <a href="#" class="a-header-navegacao">Clientes</a>
-            <a href="#" class="a-header-navegacao">Perguntas</a>
+            <a href="#produtos" class="a-header-navegacao">Produtos</a>
+            <a href="https://wa.me/5519994436006" class="a-header-navegacao">Fale comigo</a>
         </div>
     </div>
     <div class="header-linha3">
-        <a href="#" class="a-header-produtos">Todos os produtos <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
-        <a href="#" class="a-header-produtos">Novas coleções <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
-        <a href="#" class="a-header-produtos">Masculinos <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
-        <a href="#" class="a-header-produtos">Femininos <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="#destaques" class="a-header-produtos">Destaques <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="#produtos" class="a-header-produtos">Todos os produtos <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
+        <a href="produto.html?id=5" class="a-header-produtos">Meu presente <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down-icon lucide-chevron-down"><path d="m6 9 6 6 6-6"/></svg></a>
     </div>
 </header>
  
 <main>
-    <section class="section-hero">
+    <section class="section-hero" id="hero">
         <h1 class="h1">Um presente que se sente antes de se abrir</h1>
         <p class="p-hero">Presentes personalizados e artesanais, escolhidos com cuidado para quem você ama. Cada peça é pensada para contar uma história — a sua com essa pessoa.</p>
-        <a href="#" class="botao-hero">Ver Produtos</a>
-        <a href="#" class="botao-hero">WhatsApp</a>
+        <a href="#produtos" class="botao-hero">Ver Produtos</a>
+        <a href="https://wa.me/5519994436006" class="botao-hero">WhatsApp</a>
     </section>
 
     <section class="faixa-info">
@@ -76,7 +75,7 @@
         </div>
     </section>
 
-    <section class="section-sobrenos">
+    <section class="section-sobrenos" id="sobre-nos">
         <div class="div-sobre">
             <div class="sobre-texto">
                 <h2>Conheça a Bem te Quero</h2>
@@ -88,7 +87,7 @@
         </div>
     </section>
 
-    <section class="section-destaques">   
+    <section class="section-destaques" id="destaques">   
         <div class="destaques-header">
             <h2 class="h2-destaques">Destaques do mês.</h2>
             <p class="p-destaques">Presentes para o Dia dos Pais</p>
@@ -96,41 +95,38 @@
         
         <div class="destaques-grid produtos-grid">
         
-            <a href="#" class="card-produto">
+            <a href="produto.html?id=8" class="card-produto">
                 <div class="card-produto-imagem">
-                    <img src="static/img/produtos/destaque01.png" alt="Kit Cuidado & Carinho">
+                    <img src="static/img/produtos/produto8.png" alt="Cesta Doce Encanto">
                     <span class="card-produto-tag">Dia dos Pais</span>
                 </div>
-                <p class="card-produto-titulo">Kit Cuidado & Carinho</p>
-                <p class="card-produto-texto">Esse é um teste de texto de produtos card</p>
-                <p class="card-produto-preco">R$ 129,90</p>
+                <p class="card-produto-titulo">Cesta Doce Encanto</p>
+                <p class="card-produto-texto">Cesta recheada de guloseimas, bombons e uma pelúcia colecionável.</p>
+                <p class="card-produto-preco">R$ 115,00</p>
             </a>
         
-            <a href="#" class="card-produto">
+            <a href="produto.html?id=9" class="card-produto">
                 <div class="card-produto-imagem">
-                    <img src="static/img/produtos/destaque02.png" alt="Cesta Personalizada Pai">
+                    <img src="static/img/produtos/produto9.png" alt="Kit Mimos de Algodão">
                     <span class="card-produto-tag">Dia dos Pais</span>
                 </div>
-                <p class="card-produto-titulo">Cesta Personalizada Pai</p>
-                <p class="card-produto-texto">Esse é um teste de texto de produtos card</p>
-                <p class="card-produto-preco">R$ 189,90</p>
+                <p class="card-produto-titulo">Kit Mimos de Algodão</p>
+                <p class="card-produto-texto">Toalha de rosto aveludada, sabonete em barra artesanal e hidratante perfumado.</p>
+                <p class="card-produto-preco">R$ 54,90</p>
             </a>
         
-            <a href="#" class="card-produto">
+            <a href="produto.html?id=10" class="card-produto">
                 <div class="card-produto-imagem">
-                    <img src="static/img/produtos/destaque03.png" alt="Caixa Presente com Cartão">
+                    <img src="static/img/produtos/produto10.png" alt="Caixa Surpresa Bem Te Quero">
                     <span class="card-produto-tag">Dia dos Pais</span>
                 </div>
-                <p class="card-produto-titulo">Caixa Presente com Cartão</p>
-                <p class="card-produto-texto">Esse é um teste de texto de produtos card</p>
-                <p class="card-produto-preco">
-                    <span class="card-produto-preco-de">R$ 119,90</span>
-                    R$ 99,90
-                </p>
+                <p class="card-produto-titulo">Caixa Surpresa Bem Te Quero</p>
+                <p class="card-produto-texto">Combinação exclusiva com itens variados de papelaria fofa e autocuidado.</p>
+                <p class="card-produto-preco">R$ 79,90</p>
             </a>
         </div>
         <div class="link-todos-produtos">
-            <a href="#">
+            <a href="#produtos">
                 Ver todos os produtos <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right-icon lucide-chevron-right"><path d="m9 18 6-6-6-6"/></svg>
             </a>
         </div>
@@ -150,7 +146,7 @@
         </div>
     </section>
 
-    <section class="section-todos-produtos">
+    <section class="section-todos-produtos" id="produtos">
         <div class="produtos-header">
             <h2>Todos os produtos.</h2>
             <p>Produtos personalizados para todas ocasiões</p>
@@ -180,10 +176,10 @@
         
             <div class="footer-coluna">
             <p class="footer-titulo-coluna">Navegação</p>
-            <a href="#" class="footer-link">Home</a>
-            <a href="#" class="footer-link">Sobre Nós</a>
-            <a href="#" class="footer-link">Produtos</a>
-            <a href="#" class="footer-link">Perguntas Frequentes</a>
+            <a href="#hero" class="footer-link">Home</a>
+            <a href="#sobre-nos" class="footer-link">Sobre Nós</a>
+            <a href="#produtos" class="footer-link">Produtos</a>
+            <a href="https://wa.me/5519994436006" class="footer-link">Fale Comigo</a>
             </div>
         
             <div class="footer-coluna">

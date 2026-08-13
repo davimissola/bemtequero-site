@@ -40,6 +40,10 @@
     --serif: 'Boska', serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -551,6 +555,53 @@ a {
 }
 
 
+
+
+
+/* produto.html */
+.section-produto {
+    margin: 10vh 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    align-items: center;
+}
+
+.div-textoproduto {
+    width: 55%;
+    margin: auto;
+}
+
+.div-textoproduto h3 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--preto-500);
+}
+
+.div-textoproduto p {
+    color: var(--preto-400);
+    padding-bottom: 6vh;
+    border-bottom: 1px solid var(--preto-100);
+}
+
+.div-textoproduto h2 {
+    padding-top: 6vh;
+    padding-bottom: 8vh;
+    color: var(--preto-700);
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+
+.div-textoproduto a {
+    background-color: var(--preto-800);
+    color:var(--branco);
+    padding: 2vh 4vw;
+    transition: all 0.3s ease;
+}
+
+.div-textoproduto a:hover {
+    background-color: var(--preto-700);
+}
 
 
 

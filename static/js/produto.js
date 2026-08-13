@@ -1,4 +1,8 @@
-const produtos_grid = document.querySelector('.todosprodutos-grid')
+const imagem = document.querySelector('.div-imgproduto img')
+const titulo = document.querySelector('.div-textoproduto h3')
+const descricao = document.querySelector('.div-textoproduto p')
+const preco = document.querySelector('.div-textoproduto h2')
+
 
 
 
@@ -14,29 +18,19 @@ const todos_produtos = [
     {id: 9, titulo:'Kit Mimos de Algodão', descricao: 'Toalha de rosto aveludada, sabonete em barra artesanal e hidratante perfumado.', preco: 'R$ 54,90'},
     {id: 10, titulo:'Caixa Surpresa Bem Te Quero', descricao: 'Combinação exclusiva com itens variados de papelaria fofa e autocuidado.', preco: 'R$ 79,90'},
 ]
-let linha_produtos = ''
-let quantidade = 0
+const parametro_url = new URLSearchParams(window.location.search)
+const id_produto = parametro_url.get('id')
 
 
-todos_produtos.forEach(produto => {
-    quantidade++
-    let conteudo = 
-    `
-    <a href="produto.html?id=${produto.id}" class="card-produto">
-        <div class="card-produto-imagem">
-            <img src="static/img/produtos/produto${produto.id}.png" alt="${produto.descricao}">
-        </div>
-        <p class="card-produto-titulo">${produto.titulo}</p>
-        <p class="card-produto-texto">${produto.descricao}</p>
-        <p class="card-produto-preco">${produto.preco}</p>
-    </a>
-    `
-    linha_produtos += conteudo
+if (id_produto) {
+    const produto_encontrado = todos_produtos.find(produto => produto.id == Number(id_produto))
 
-    if (quantidade == 3) {
-        console.log('aqui')
-        produtos_grid.innerHTML += `<div class="produtos-grid">${linha_produtos}</div>`
-        quantidade = 0
-        linha_produtos = ''
+    if (produto_encontrado) {
+        imagem.src = `static/img/produtos/produto${produto_encontrado.id}.png`
+        titulo.innerHTML = produto_encontrado.titulo
+        descricao.innerHTML = produto_encontrado.descricao
+        preco.innerHTML = produto_encontrado.preco
     }
-});
+}
+
+
